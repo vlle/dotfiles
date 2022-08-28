@@ -44,7 +44,7 @@ transfer(){ if [ $# -eq 0 ];then echo "No arguments specified.\nUsage:\n transfe
 cleanspace() {
     df | grep '512-blocks'
     df -H | grep 'disk2'
-    rm -rf ~/Library/Caches/*
+    rm -rf ~/Library/Caches/* 
     rm -rf ~/Library/Application\ Support/Slack/Service\ Worker/CacheStorage/
     rm -rf ~/Library/Application\ Support/Slack/Cache/
     rm -rf ~/Library/Application\ Support/Slack/Code\ Cache/
