@@ -37,6 +37,7 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'itchyny/lightline.vim'
 " On-demand loading
 Plug 'dense-analysis/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug for lint in vim
 " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 'markdown' }
@@ -53,7 +54,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " nvim v0.5.0
 " Initialize plugin system
-
+let g:ale_disable_lsp = 1
 call plug#end()
 " Important!!
 
