@@ -56,6 +56,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " nvim v0.5.0
 " Initialize plugin system
 let g:ale_disable_lsp = 1
+au BufRead,BufNewFile *.h set filetype=c
 call plug#end()
 " Important!!
 
@@ -72,6 +73,8 @@ set number
 set relativenumber
 "autocmd vimenter * ++nested colorscheme gruvbox
 autocmd BufNewFile,BufRead *.check set filetype=c
+let g:ale_c_parse_makefile = 1
+let g:ale_linters = {'cpp' : ['gcc'],'c': ['gcc', 'cpplint', 'cppcheck']}
 
 nnoremap <silent> K :call ShowDocumentation()<CR>
 function! ShowDocumentation()
@@ -92,6 +95,8 @@ endif
 set updatetime=300
 set signcolumn=yes
 
+map <C-K> :pyf /Users/workerco/.brew/opt/llvm/share/clang/clang-format.py<cr>
+imap <C-K> <c-o>:pyf /Users/workerco/.brew/opt/llvm/share/clang/clang-format.py<cr>
 
 
 " Относительные линии для джампов"
