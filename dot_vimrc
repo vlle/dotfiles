@@ -91,6 +91,12 @@ else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 set updatetime=300
 set signcolumn=yes
