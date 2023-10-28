@@ -1,30 +1,43 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export EDITOR:nvim
+SETUVAR --export PAGER:less
+SETUVAR --export VISUAL:nvim
 SETUVAR __fish_initialized:3400
+SETUVAR _fish_abbr_ga:git\x20add
+SETUVAR _fish_abbr_gc:git\x20commit\x20\x2dm
+SETUVAR _fish_abbr_gp:git\x20pull
+SETUVAR _fish_abbr_gs:git\x20status
+SETUVAR _fish_abbr_gst:git\x20status
+SETUVAR _fish_abbr_icat:kitty\x20\x2bkitten\x20icat
+SETUVAR _fish_abbr_ls:exa\x20\x2d\x2dgit\x2dignore
+SETUVAR _fish_abbr_up:cd\x20\x2e\x2e
+SETUVAR _fish_abbr_vim:nvim
+SETUVAR _fish_abbr_vimconfig:nvim\x20/Users/artemijkulikov/\x2econfig/nvim/lua/vlle/init\x2elua
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_patrickf1_2F_fzf_2E_fish_files:\x7e/\x2econfig/fish/functions/_fzf_configure_bindings_help\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_extract_var_info\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_changed_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_diff_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_file_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_directory\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_log\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_status\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_history\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_processes\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_variables\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_wrapper\x2efish\x1e\x7e/\x2econfig/fish/functions/fzf_configure_bindings\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fzf\x2efish\x1e\x7e/\x2econfig/fish/completions/fzf_configure_bindings\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher\x1epatrickf1/fzf\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR fish_color_autosuggestion:777777
+SETUVAR fish_color_autosuggestion:585858
 SETUVAR fish_color_cancel:\x2d\x2dreverse
-SETUVAR fish_color_command:000000
-SETUVAR fish_color_comment:4e4e4e
+SETUVAR fish_color_command:a1b56c
+SETUVAR fish_color_comment:f7ca88
 SETUVAR fish_color_cwd:green
 SETUVAR fish_color_cwd_root:red
-SETUVAR fish_color_end:767676
-SETUVAR fish_color_error:b2b2b2
-SETUVAR fish_color_escape:00a6b2
+SETUVAR fish_color_end:ba8baf
+SETUVAR fish_color_error:ab4642
+SETUVAR fish_color_escape:86c1b9
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:normal
 SETUVAR fish_color_host_remote:\x1d
 SETUVAR fish_color_keyword:\x1d
-SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
+SETUVAR fish_color_match:7cafc2
 SETUVAR fish_color_normal:normal
-SETUVAR fish_color_operator:00a6b2
+SETUVAR fish_color_operator:7cafc2
 SETUVAR fish_color_option:\x1d
-SETUVAR fish_color_param:303030
-SETUVAR fish_color_quote:626262
-SETUVAR fish_color_redirection:8a8a8a
+SETUVAR fish_color_param:d8d8d8
+SETUVAR fish_color_quote:f7ca88
+SETUVAR fish_color_redirection:d8d8d8
 SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_status:red
@@ -44,4 +57,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/Users/workerco/\x2ebrew/opt/llvm/bin\x1e/Users/workerco/\x2ebrew/bin/\x1e/Users/workerco/\x2ebrew/bin\x1e/opt/homebrew/bin
+SETUVAR fish_user_paths:/Users/artemijkulikov/Downloads/protoc\x2d23\x2e2\x2dosx\x2duniversal_binary/bin\x1e/opt/homebrew/opt/openjdk\x4011/bin\x1e/Users/artemijkulikov/go/bin\x1e/Users/artemijkulikov/go/\x1e/opt/homebrew/opt/mysql\x2dclient/bin\x1e/Users/artemijkulikov/\x2elocal/bin\x1e/Users/artemijkulikov/parsers/tree\x2dsitter\x2dfunc/node_modules/\x2ebin\x1e/Users/artemijkulikov/SCHOOL21/bin_ton\x1e/Users/workerco/\x2ebrew/opt/llvm/bin\x1e/Users/workerco/\x2ebrew/bin/\x1e/Users/workerco/\x2ebrew/bin\x1e/opt/homebrew/bin
