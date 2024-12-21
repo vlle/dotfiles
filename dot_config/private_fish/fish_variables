@@ -2,8 +2,10 @@
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
 SETUVAR --export PAGER:less
+SETUVAR --export --path PATH:/Users/artemijkulikov/\x2ecabal/bin\x1e/Users/artemijkulikov/\x2eghcup/bin\x1e/Users/artemijkulikov/Downloads/protoc\x2d23\x2e2\x2dosx\x2duniversal_binary/bin\x1e/opt/homebrew/opt/openjdk\x4011/bin\x1e/Users/artemijkulikov/go/bin\x1e/Users/artemijkulikov/go/\x1e/opt/homebrew/opt/mysql\x2dclient/bin\x1e/Users/artemijkulikov/\x2elocal/bin\x1e/Users/artemijkulikov/parsers/tree\x2dsitter\x2dfunc/node_modules/\x2ebin\x1e/Users/artemijkulikov/SCHOOL21/bin_ton\x1e/Users/workerco/\x2ebrew/opt/llvm/bin\x1e/Users/workerco/\x2ebrew/bin/\x1e/Users/workerco/\x2ebrew/bin\x1e/opt/homebrew/bin\x1e/usr/local/bin\x1e/System/Cryptexes/App/usr/bin\x1e/usr/bin\x1e/bin\x1e/usr/sbin\x1e/sbin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/local/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/appleinternal/bin\x1e/Library/Apple/usr/bin\x1e/usr/local/share/dotnet\x1e\x7e/\x2edotnet/tools\x1e/usr/local/go/bin\x1e/Library/Frameworks/Mono\x2eframework/Versions/Current/Commands\x1e/Applications/Postgres\x2eapp/Contents/Versions/latest/bin\x1e/Library/TeX/texbin\x1e/usr/local/go/bin
+SETUVAR --export PYENV_ROOT:/Users/artemijkulikov/\x2epyenv
 SETUVAR --export VISUAL:nvim
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gc:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_gp:git\x20pull
@@ -20,12 +22,12 @@ SETUVAR _fisher_plugins:jorgebucaran/fisher\x1epatrickf1/fzf\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:585858
 SETUVAR fish_color_cancel:\x2d\x2dreverse
-SETUVAR fish_color_command:a1b56c
+SETUVAR fish_color_command:yellow\x1ebold
 SETUVAR fish_color_comment:f7ca88
 SETUVAR fish_color_cwd:green
 SETUVAR fish_color_cwd_root:red
 SETUVAR fish_color_end:ba8baf
-SETUVAR fish_color_error:ab4642
+SETUVAR fish_color_error:red
 SETUVAR fish_color_escape:86c1b9
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:normal
@@ -38,7 +40,7 @@ SETUVAR fish_color_option:\x1d
 SETUVAR fish_color_param:d8d8d8
 SETUVAR fish_color_quote:f7ca88
 SETUVAR fish_color_redirection:d8d8d8
-SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_search_match:white\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_status:red
 SETUVAR fish_color_user:brgreen
