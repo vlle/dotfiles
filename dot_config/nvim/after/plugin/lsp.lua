@@ -15,11 +15,13 @@ local lsp_attach = function(client, bufnr)
 	vim.keymap.set("n", "<F2>", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
 	vim.keymap.set({ "n", "x" }, "<F3>", "<cmd>lua vim.lsp.buf.format({async = true})<cr>", opts)
 	vim.keymap.set("n", "<F4>", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
-	vim.keymap.set(
-		"n", -- Normal mode
-		"gl", -- Keybind (you can change 'g-l' to whatever you prefer)
-		"<cmd>lua vim.diagnostic.open_float()<CR>" -- Command to show diagnostics
-	)
+
+	vim.keymap.set("n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
+	-- vim.keymap.set(
+	-- 	"n", -- Normal mode
+	-- 	"gl", -- Keybind (you can change 'g-l' to whatever you prefer)
+	-- 	"<cmd>lua vim.diagnostic.open_float()<CR>" -- Command to show diagnostics
+	-- )
 end
 
 -- Keybind for showing error text in a floating window
@@ -64,6 +66,7 @@ require("mason-lspconfig").setup({
 		gopls = function()
 			require("lspconfig").gopls.setup({
 				on_attach = function(client, bufnr)
+					-- vim.lsp.buf.inlay_hint(true, bufnr)
 					vim.lsp.inlay_hint.enable(true, vim.lsp.inlay_hint.get())
 				end,
 				-- cmd = { "gopls" },
@@ -88,6 +91,27 @@ require("mason-lspconfig").setup({
 							-- compositeLiteralFields = true,
 						},
 						staticcheck = true,
+					},
+				},
+			})
+		end,
+		golangci_lint_ls = function()
+			require("lspconfig").golangci_lint_ls.setup({
+				filetypes = { "go" },
+				default_config = {
+					cmd = { "golangci-lint-langserver" },
+					root_dir = require("lspconfig").util.root_pattern(".git", "go.mod"),
+					init_options = {
+						command = {
+							"golangci-lint",
+							"run",
+							"--enable-all",
+							"--disable",
+							"lll",
+							"--out-format",
+							"json",
+							"--issues-exit-code=1",
+						},
 					},
 				},
 			})
